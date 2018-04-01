@@ -23,3 +23,4 @@ while answer == 'y':
 		change = round(change - coins[pos][0])
 		coins[pos][1] = coins[pos][1] - 1
 	answer = input("Continue? ") 		
+#testing
