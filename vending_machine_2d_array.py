@@ -13,7 +13,7 @@ while answer == 'y':
 		print(pos)
 		if coins[pos][0] > change or coins[pos][1] == 0:
 			if pos < len(coins) - 1:
-				pos = pos + 1
+				pos += 1
 			else:
 				print("Sorry, no more change")
 				break	
@@ -21,6 +21,6 @@ while answer == 'y':
 
 		print ("Give change ", coins[pos][0])
 		change = round(change - coins[pos][0])
-		coins[pos][1] = coins[pos][1] - 1
+		coins[pos][1] -= 1
 	answer = input("Continue? ") 		
 #testing
